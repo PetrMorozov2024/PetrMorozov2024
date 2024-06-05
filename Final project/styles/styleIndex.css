@@ -2,6 +2,7 @@ body{
     background-color: #F4E9DC
 }
 
+
 h1{
     font-size: 65px;
     font-family: 'Old Standart';
@@ -235,4 +236,150 @@ div.content{
         padding-top: 250px;
         padding-right: 50px;
     }
+    html.dark, .dark body{
+        nav.navigation-sticky{
+            background-color: #3B3B3B;
+            border-bottom: solid #383838;
+        }
+    
+        a.nav-link{
+            color: #F4E9DC;
+            background-color: #3B3B3B;
+        }
+        
+        .dropButton{
+            color: #F4E9DC;
+            background-color: #3B3B3B;
+        }
+
+        #nameAndMotto, 
+        #aboutWork,
+        #aboutMe,
+        #whyMe,
+        #questions,
+        #whatInService{
+            background-color: #383838;
+        }
+
+        h1{
+            color: #F4E9DC;
+        }
+    
+        p{
+            color: #F4E9DC;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .dropButton {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .dropElements a {
+        padding: 10px;
+    }
+
+    div#nameAndMotto,
+    div#aboutWork,
+    div#aboutMe,
+    div#whyMe,
+    div#questions,
+    div#whatInService {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    div#textNameAndPhoto,
+    div#textAboutWork,
+    div#textAboutMe,
+    div#textWhyMe,
+    div#textQuestions,
+    div#textWhatInService {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    div#containerSecondPhoto,
+    div#firstContainerPhotoAboutWork,
+    div#secondContainerPhotoAboutWork,
+    div#containerPhotosAboutMe,
+    div#containerPhotoWhyMe,
+    div#containerPhotosQuestions,
+    div#containerPhotosWhatInService {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    div#name,
+    div#surname,
+    div#motto,
+    div#headerAboutWork,
+    div#headerAboutMe,
+    div#headerWhyMe,
+    div#headerQuestions {
+        padding: 10px 0;
+    }
+
+    div#imageNameAndMotto,
+    div#firstPhotoAboutMe,
+    div#secondPhotoAboutMe,
+    div#firstPhotoQuestions,
+    div#secondPhotoQuestions,
+    div#firstPhotoWhatInService,
+    div#secondPhotoWhatInService {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    nav.navigation-sticky ul.nav {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav.navigation-sticky .nav-item {
+        text-align: center;
+    }
+    html.dark, .dark body{
+        .content{
+            background-color: #3B3B3B;
+        }   
+    
+        h1{
+            color: #F4E9DC;
+        }
+    
+        p{
+            color: #F4E9DC;
+        }
+    
+        nav.navigation-sticky{
+            background-color: #3B3B3B;
+            border-bottom: solid #383838;
+        }
+    
+        a.nav-link{
+            color: #F4E9DC;
+            background-color: #3B3B3B;
+        }
+        .dropButton{
+            color: #F4E9DC;
+            background-color: #3B3B3B;
+        }
+        
+    }
+    
 }
